@@ -1,0 +1,117 @@
+
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.calculator-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 320px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.calculator-box h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+
+.calculator-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.calculator-box input::placeholder {
+    color: white;
+}
+
+.calculator-box input:focus {
+    border-color: white;
+}
+
+
+#btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+ 
+#btn-group button {
+    flex: 1 1 45%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(255, 65, 108, 0.4);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#btn-group button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+#btn-group button:active {
+    transform: scale(0.95);
+}
+
+
+#result {
+    margin-top: 25px;
+    font-size: 20px;
+    color:white;
+    font-weight: 600;
+}
+/* Direct button selector */
+.calculator-box button {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(255, 65, 108, 0.4);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.calculator-box button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.calculator-box button:active {
+    transform: scale(0.95);
+}
